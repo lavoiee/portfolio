@@ -1,0 +1,57 @@
+/*------------------------------- Global -------------------------------------*/
+* {
+  box-sizing: border-box;
+}
+
+a {
+
+}
+
+/*--------------------------- List Styling -----------------------------------*/
+
+a.downloadLink {
+  /*-------- Color ---------*/
+  color: blue;
+
+  /*-------- Transition ------------*/
+  transition: color 2s;
+}
+
+a.downloadLink:hover {
+  /*-------- Color ---------*/
+  color: red;
+}
+
+li {
+  text-decoration: none;
+  list-style-type: none;;
+}
+
+.li-h1 {
+  font-weight: bold;
+
+}
+
+.flex-wrapper {
+  /*-------- Background --------*/
+
+
+
+  /*---------Dimensions---------*/
+}
+
+.img-wrapper {
+  /*---------Dimensions---------*/
+  height: 96vh;
+  width: 100vw;
+  opacity: 0.4;
+}
+
+ul {
+  position: absolute;
+  color: black;
+}
+
+h1 {
+  color: black;
+}

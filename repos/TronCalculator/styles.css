@@ -1,0 +1,150 @@
+@media screen and (max-width: 480px){
+*{
+    box-sizing: border-box;
+}
+
+#calculator{
+    margin: 180px auto;
+    width: 160px;
+    max-width: 300px;
+    max-height: 600px; 
+}
+
+#display{
+    height: 40px;
+    width: 160px;
+    background-color: black;
+    opacity: 0.85;
+    color: white;
+    font-family: Courier New, Courier, monospace;
+    text-shadow: 0 0 10px #E6FFFF, 0 0 10px #6FC3DF;
+    box-shadow: 0px 0px 10px #6FC3DF;
+    text-align: right;
+    margin: 0px;
+    font-size: 25px;
+}
+
+
+html{
+    /* Animated GIF from http://giphy.com/gifs/tron-inYPICtYqK3oQ */
+    background: url(assets/animation/tron.gif) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 80% 80%;
+    margin: -15vh;
+    background-color: black;
+}
+
+#key{
+    width: 40px;
+    height: 40px;
+    margin-right: -4px;
+    background-color: black;
+    color: white;
+    text-shadow: 0 0 10px #E6FFFF, 0 0 20px #6FC3DF;
+    box-shadow: 0px 0px 10px #6FC3DF;
+    opacity: 0.85;
+    font-family: Courier New, Courier, monospace;
+    font-size: 1.25em;
+    text-align: center;
+    transition: background-color 1s;
+}
+
+#key:hover{
+    border: 2px solid #6FC3DF;
+}
+
+#key-rotation{
+    color: white;
+    text-shadow: 0 0 10px #6FC3DF, 0 0 5px #6FC3DF;
+    transition: transform 3s;
+}
+
+#key-rotation:hover{
+
+    -webkit-transform: rotateY(360deg); /* Safari */
+    transform: rotateY(360deg);
+}
+
+#keypad{
+    margin: 0px;
+    width: 160px;
+}
+}
+
+@media screen and (min-width: 480px){
+*{
+    box-sizing: border-box;
+}
+
+#calculator{
+    margin: 18vh auto;
+    width: 20vw;
+    height: 50vh;
+    position: relative;
+}
+
+#display{
+    height: 10vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.85;
+    color: white;
+    text-shadow: 0 0 10px #E6FFFF, 0 0 20px #6FC3DF;
+    box-shadow: 0px 0px 10px #6FC3DF;
+    text-align: right;
+    font-size: 7vh;
+    font-family: Courier New, Courier, monospace;
+}
+
+html{
+    /* Animated GIF from http://giphy.com/gifs/tron-inYPICtYqK3oQ */
+    background: url(assets/animation/tron.gif) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 80% 120%;
+    margin-top: 7%;
+    background-color: black;
+}
+
+#key{
+    width: 25%;
+    height: 27.5%;
+    background-color: black;
+    opacity: 0.85;
+    color: white;
+    text-shadow: 0 0 10px #E6FFFF, 0 0 20px #6FC3DF;
+    box-shadow: 0px 0px 10px #6FC3DF;
+    font-family: Courier New, Courier, monospace;
+    font-size: 200%;
+    text-align: center;
+    transition: background-color 1s;
+    display: inline-block;
+}
+
+#key:hover{
+    border: 2px solid #6FC3DF;
+
+}
+
+#key-rotation{
+    color: white;
+    text-shadow: 0 0 10px #6FC3DF, 0 0 5px #6FC3DF;
+    transition: transform 3s;
+
+}
+
+#key-rotation:hover{
+    -webkit-transform: rotateY(150deg); /* Safari */
+    transform: rotateY(720deg);
+}
+
+#keypad{
+    height: 40vh;
+    width: 20vw;
+    display: table;
+
+}
+}

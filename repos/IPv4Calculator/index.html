@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css"/>
+    <title>IPv4 Calculator</title>
+  </head>
+  <body>
+    <div class="flex-container">
+
+
+          <form>
+            <h1>IPv4 Subnet Calculator</h1>
+              <div class="flex-wrapper">
+                <div class="flex-column">
+                  <fieldset>
+                    <legend class="fieldset-legend">Input</legend>
+                    <legend>Network Class</legend>
+                      <input type="radio" name="network-class" value="A">A
+                      <input type="radio" name="network-class" value="B">B
+                      <input type="radio" name="network-class" value="C">C
+                  </fieldset>
+                  <fieldset>
+                    <legend class="fieldset-legend">Input</legend>
+                    <legend>IP Address</legend>
+                    <input class="field" type="text" name="ipAddress" id="ipAddress" placeholder="10.0.0.1" autofocus>
+                    <legend>Subnet Mask</legend>
+                    <select class="field" name="subnetMask" id="subnetMask">
+                      <option value="">255.0.0.0</option>
+                    </select>
+                    <legend>Subnet Bits</legend>
+                    <select class="field" name="subnetBits" id="subnetBits">
+                      <option value="">0</option>
+                    </select>
+                    <legend>Maximum Subnets</legend>
+                    <select class="field" name="maxSubnets" id="maxSubnets">
+                      <option value="">1</option>
+                    </select>
+                  </fieldset>
+                </div>
+                <div class="flex-column">
+                  <fieldset>
+                    <legend class="fieldset-legend">Read Only Output</legend>
+                    <legend>First Octet Range</legend>
+                    <input class="calcOutput" type="text" id="octetRange" name="octetRange" value="1 - 126" readonly>
+                    <legend>Hexadecimal IP Address</legend>
+                    <input class="calcOutput" type="text" id="HexIPAddress" name="HexIPAddress" value="0A.00.00.01" readonly>
+                    <legend>Wildcard Mask</legend>
+                    <input class="calcOutput" type="text" id="wildcardMask" name="wildcardMask" value="0.255.255.255" readonly>
+                  </fieldset>
+                  <fieldset>
+                    <legend class="fieldset-legend">Input</legend>
+                    <legend>Mask Bits</legend>
+                    <select class="field" name="maskBits" id="maskBits">
+                      <option value="">8</option>
+                    </select>
+                    <legend>Hosts per Subnet</legend>
+                    <select class="field" name="subnetHosts" id="subnetHosts">
+                      <option value="">16777214</option>
+                    </select>
+                  </fieldset>
+                </div>
+                <div class="flex-column">
+
+
+                </div>
+              </div>
+              <div class="flex-column">
+                <fieldset>
+                  <legend class="fieldset-legend">Read Only Output</legend>
+                  <legend>Host Address Range</legend>
+                  <input class="calcOutput" type="text" id="hostRange" name="hostRange" value="10.0.0.1 - 10.255.255.255" readonly>
+                  <legend>Subnet Id</legend>
+                  <input class="calcOutput" type="text" id="subnetId" name="subnetId" value="10.0.0.0" readonly>
+                  <legend>Broadcast Address</legend>
+                  <input class="calcOutput" type="text" id="broadcastAddress" name="broadcastAddress" value="10.255.255.255" readonly>
+                  <legend>Subnet Bitmap</legend>
+                  <input class="calcOutput" type="text" id="subnetBitmap" name="subnetBitmap" value="0nnnnnnn.hhhhhhhh.hhhhhhhh.hhhhhhhh" readonly>
+                </fieldset>
+              </div>
+              <div class="flex-column">
+                <button type="submit" name="submit" id="submit">Submit</button>
+                <button type="submit" name="reset" id="reset">Reset</button>
+              </div>
+          </form>
+      </div>
+
+  </body>
+  <script src="js/script.js"></script>
+</html>

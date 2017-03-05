@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css"/>
+    <title>Quiz Utility</title>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="flex-wrapper-col">
+        <form class="" name="quiz" action="index.html" method="post">
+          <fieldset>
+            <legend>Questions:</legend>
+            1. What is a low-level programming language?
+            <ul>
+              <li>A.<input type="radio" name="1.a" value="true">
+                In computer science, a low-level programming language is a programming language
+                that provides little or no abstraction from a computer's instruction set architecture
+                -- commands or functions in the language map closely to the processor instructions.
+                Generally this refers to either machine code or assembly language.
+              </li><br>
+              <li>B.<input type="radio" name="1.b" value="false">
+                A programming language that is easy to learn because it has a simple syntax.
+              </li><br>
+              <li>C.<input type="radio" name="1.c" value="false">
+                A programming language which is not worth learning.
+              </li><br>
+            </ul>
+            2. What is meant by server-side scripting?
+            <ul>
+              <li>A.<input type="radio" name="2.a" value="false">
+                A script that runs in an end-user's browser.
+              </li><br>
+              <li>B.<input type="radio" name="2.b" value="true">
+                A script that runs on a remote server.
+              </li><br>
+              <li>C.<input type="radio" name="2.c" value="false">
+                A compiled programming running on a server.
+              </li><br>
+            </ul>
+            3. Node.js is a client side scripting language.
+            <ul>
+              <li>A.<input type="radio" name="3.a" value="false">
+                True
+              </li><br>
+              <li>B.<input type="radio" name="2.b" value="true">
+                False
+              </li><br>
+            </ul>
+          </fieldset>
+
+          <div class="flex-wrapper-row">
+            <button type="submit" name="Submit">Submit</button>
+            <button type="reset" name="Reset">Reset</button>
+          </div>
+
+        </form><br>
+        <div class="flex-wrapper-col">
+          <fieldset>
+            <legend>Quiz results:</legend>
+            <textarea name="statistics"></textarea>
+          </fieldset>
+        </div>
+
+
+
+
+      </div>
+    </div>
+  </body>
+  <script src="js/script.js"></script>
+</html>

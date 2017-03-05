@@ -59,6 +59,10 @@
     box-sizing: border-box;
   }
 
+  button {
+    margin: 1%;
+  }
+
 
   /*---------------------------flex-container------------------------------------*/
   .flex-container {
@@ -80,13 +84,12 @@
   flex-direction: column;
 
   /*-------- Dimension ---------*/
-  height: 67vh;
   width: 60vw;
   margin: auto;
 
 
   /*---------- Color -----------*/
-  background-color: lightblue;
+  background-color: lightgrey;
 }
 
 .flex-wrapper-row {
@@ -101,7 +104,7 @@
 }
 
 form {
-  background-color: lightgrey;
+
 }
 
 label {
